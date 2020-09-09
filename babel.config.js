@@ -1,6 +1,10 @@
-module.exports = {
+/** @type { import('@babel/core').TransformOptions } */
+const options = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
+    // export * as ns from "mod"
+    ['@babel/plugin-proposal-export-namespace-from'],
+    // path aliases
     [
       'babel-plugin-module-resolver',
       {
@@ -15,3 +19,5 @@ module.exports = {
     ],
   ],
 };
+
+module.exports = options;

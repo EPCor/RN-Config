@@ -2,6 +2,8 @@
   "name": "rnapp",
   "version": "0.0.1",
   "private": true,
+  "description": "React Native Engineering Configuration",
+  "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios --simulator 'iPhone SE'",
@@ -14,10 +16,14 @@
     "react-native": "0.63.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@babel/runtime": "^7.10.4",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@types/babel__core": "^7.1.9",
+    "@types/eslint": "^7.2.2",
     "@types/jest": "^25.2.3",
+    "@types/prettier": "^2.1.0",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
@@ -41,5 +47,34 @@
       "json",
       "node"
     ]
-  }
+  },
+  "config": {},
+  "keywords": [
+    "React Native Engineering Configuration"
+  ],
+  "author": "zhilidali@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:EPCor/RN-Config.git"
+  },
+  "homepage": "https://github.com:EPCor/RN-Config#readme",
+  "bugs": {
+    "url": "https://github.com:EPCor/RN-Config/issues"
+  },
+  "license": "MIT",
+  "directories": {
+    "doc": "docs",
+    "test": "__test__",
+    "man": "src"
+  },
+  "engines": {
+    "node": ">= v12.18.2",
+    "vscode": "^1.48.2",
+    "Git": ">= 2.13.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
 }
