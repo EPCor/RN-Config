@@ -22,3 +22,12 @@ target 'RNApp' do
     flipper_post_install(installer)
   end
 end
+
+target 'RNApp-tvOS' do
+  # Pods for RNApp-tvOS
+
+  target 'RNApp-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
