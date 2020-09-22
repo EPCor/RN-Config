@@ -9,15 +9,12 @@ export interface Props {
 }
 
 export const Home: React.FC<Props> = props => {
+  const goAbout = () => props.navigation.navigate('About');
+
   return (
     <View style={styles.content}>
       <Text style={styles.text}>{props.name}</Text>
-      <Button
-        title="goto About Page"
-        onPress={() => {
-          props.navigation.navigate('About');
-        }}
-      />
+      <Button title="goto About Page" onPress={goAbout} />
     </View>
   );
 };
