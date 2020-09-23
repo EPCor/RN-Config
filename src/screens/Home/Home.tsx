@@ -1,19 +1,13 @@
-import { StackNavigationProp } from '@react-navigation/stack';
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { RootStackParams } from '../routeParams';
+import { RootScreenProps } from '../routeParams';
 
-export interface Props {
-  name: string;
-  navigation: StackNavigationProp<RootStackParams, 'Home'>;
-}
-
-export const Home: React.FC<Props> = props => {
+export const Home: React.FC<RootScreenProps<'Home'>> = props => {
   const goAbout = () => props.navigation.navigate('About');
 
   return (
     <View style={styles.content}>
-      <Text style={styles.text}>{props.name}</Text>
+      <Text style={styles.text}>{props.route.name}</Text>
       <Button title="goto About Page" onPress={goAbout} />
     </View>
   );
@@ -31,3 +25,5 @@ const styles = StyleSheet.create({
     color: 'black',
   },
 });
+
+export default Home;

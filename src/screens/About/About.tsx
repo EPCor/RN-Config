@@ -1,16 +1,10 @@
-import { RouteProp } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { RootStackParams } from '../routeParams';
+import { RootScreenProps } from '../routeParams';
 
-export interface Props {
-  route: RouteProp<RootStackParams, 'About'>;
-  navigation: StackNavigationProp<RootStackParams, 'About'>;
-}
+export type Props = RootScreenProps<'About'>;
 
 export const About: React.FC<Props> = ({ route, navigation }) => {
-  console.log(route);
   return (
     <View style={styles.content}>
       <Text style={styles.text}>{route.name}</Text>
