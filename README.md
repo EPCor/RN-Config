@@ -2,6 +2,11 @@
 
 React Native Engineering Configuration
 
+| Branch Name        | Feature                  |       Stage        |
+| :----------------- | :----------------------- | :----------------: |
+| [master][b-master] | React Navigation + Redux |   :construction:   |
+| [rn][b-rn]         | Basic React Native       | :white_check_mark: |
+
 ## Usage
 
 <a class="btn btn-sm btn-primary ml-2" href="https://github.com/EPCor/RN-Config/generate">Use this template</a> or clone this repository
@@ -42,13 +47,13 @@ $ npm run ios # Run on ios
 │   ├── @types/ # TypeScript Declaration Files
 │   ├── components/
 │   ├── screens/
-│   ├── utils/ # entry file
+│   ├── utils/
 │   ├── routes/ # pages/view
 │   ├── assets/
 │   │   ├── fonts/
 │   │   └── images/
 │   ├── index.html
-│   └── index.js
+│   └── index.js # entry file
 ├── docs/
 │   ├── FAQ.md
 │   └── README.md
